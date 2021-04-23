@@ -1,10 +1,10 @@
 #Project Description
 
-A DataFrame is a table with named columns, each of these columns is called Series, 
-A DataFrame only holds one Series for each string name, but generally can be any number of Series in a DataFrame, 
-with the limitation, that each Series has to have the same number of elements.
+A DataFrame is a table with columns, each of these columns is named Series, 
+A DataFrame only holds one Series for each string name, but generally it can be unlimited Series in a DataFrame, 
+cach Series has to have the same number of elements.
 
-Features and use case of a Data Frame implementation can be seen through main.py and test/ modules.
+Features and use case of a Data Frame implementation can be seen in main.py and test/ modules.
 
 #Structure Overview:
 - src/dataframe.py - DataFrame class implementation
