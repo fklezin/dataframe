@@ -17,7 +17,7 @@ df["price"] = df["price"] * 1.1
 print("Index goes up:", df)
 
 # From CSV - De Niro's movies
-df_deniro = from_csv("../data/deniro.csv", header=True)
+df_deniro = from_csv("data/deniro.csv", header=True)
 print(df_deniro.get_column_types())
 result = df_deniro[(df_deniro["Year"] > 1985.0) & (df_deniro["Year"] <= 1995.0) & (df_deniro["Score"] > 90.0)]
 result_inverted = df_deniro[
