@@ -5,6 +5,9 @@ from src.series import Series
 class SeriesTest(unittest.TestCase):
 
     def setUp(self):
+        pass
+
+    def test_init(self):
         self.series_str_mock = ["X4E", "T3B", "F8D", "C7X", "VR4"]
         self.series_int_mock = [1, -2, 12312, 122, 0]
         self.series_float_mock = [1.123, 100.0, -300.123, 0.0, 0.0]
@@ -12,7 +15,6 @@ class SeriesTest(unittest.TestCase):
         self.series_bool_mock = [True, False, True, True, False, None]
         self.series_err_mock = [True, 2, "asd", True, False, None]
 
-    def test_init(self):
         self.assertEqual(Series(self.series_str_mock).data_type, str)
         self.assertEqual(Series(self.series_float_mock).data_type, float)
         self.assertEqual(Series(self.series_int_mock).data_type, int)
